@@ -1,14 +1,20 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
+import ItemPicker from '@/components/ItemPicker.vue'
+import HomeScreen from '@/components/HomeScreen.vue'
 
 Vue.use(VueRouter)
 
 const routes = [
   {
+    path: '/item',
+    name: 'ItemPicker',
+    component: ItemPicker
+  },
+  {
     path: '/',
-    name: 'Home',
-    component: Home
+    name: 'HomeScreen',
+    component: HomeScreen
   },
   {
     path: '/about',
